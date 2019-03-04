@@ -2,7 +2,6 @@ version: '2.2'
 services:
   rabbit:
     image: "rabbitmq"
-    restart: always
     ports:
       - "5672:5672"
   consumer:
