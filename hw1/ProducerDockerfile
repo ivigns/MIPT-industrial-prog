@@ -1,0 +1,6 @@
+FROM python:3.5-alpine
+WORKDIR /work
+ADD send.py /work
+ADD requirements.txt /work
+RUN pip install -r /work/requirements.txt
+CMD ["python", "-u", "send.py"]
